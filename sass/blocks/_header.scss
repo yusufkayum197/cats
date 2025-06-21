@@ -1,0 +1,110 @@
+.header{
+    &__container {
+        padding: 12px 0;
+    }
+    &__navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &__item a{
+        font-family: "Lato",sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #1A212F;
+        opacity: 0.6;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+    &__list__mobile {
+        display: none;
+    }
+    .hamburger__icon{
+        display: none;
+    }
+    .close__icon{
+        display: none;
+    }
+    button{
+        border: none;
+        background-color: transparent;
+    }
+
+}
+
+@media only screen and (max-width:1430px){
+    .header__link{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .header{
+        padding: 0 30px;
+    }
+    .header__mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .header__logo{
+        z-index: 1;
+    }
+    .header__mobile{
+        display: block;
+        // position: absolute;
+        // padding-top: 5%;
+        // padding-left: 0%;
+    }
+
+    .header .hamburger__icon{
+        display: block;
+        z-index: 1;
+    }
+    .header .close__icon{
+        display: none;
+        z-index: 1;
+    }
+    .header .header__list{
+        width: 100%;
+        height: 50%;
+        top: 0%;
+        left: 0%;
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        text-align: center;
+        background-color: #FAC663;
+    }
+    .header .header__item+.header__item{
+        padding-top: 5%;
+    }
+    .header__item{
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        vertical-align: middle;
+        opacity: 1;
+        color: #1A212F;
+        padding-top: 22%;
+        padding-left: 5%;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width:590px){
+    .header__item{
+        padding-top: 28%;
+    }
+}

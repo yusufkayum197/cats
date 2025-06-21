@@ -1,0 +1,128 @@
+.number{
+        padding: 137px 0;
+        background-image: url("../../img/fish.svg");
+        background-repeat: no-repeat;
+        background-position: left top 170px;
+
+        
+    &__box{
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+    }
+    &__title{
+        font-family: "Rubik", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #1A212F; 
+        text-align: center;
+        padding-bottom: 70px;
+    }
+    &__list{
+        list-style: circle;
+        position: absolute;
+        right: 16%;
+    }
+    & img{
+        padding-left: 5%;
+    }
+    &__item{
+        width: 500px;
+        height: 284px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 25px 0px #D0D0D040;
+        background-color: #FFFFFF;
+        padding: 40px 117px 40px 100px;
+    }   
+    &__item__title{
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        padding-bottom: 30px;     
+    }
+    &__item__text{
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 0%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #1A212F; 
+        padding-bottom: 45px;
+    }
+
+    #hero__btn{
+        background-color: #FF7236;
+        color: #FFFEFD;
+        z-index: 5;
+        width: 206px;
+        height: 50px;
+        &:hover {
+            background-color: #eba78a;
+            transition: ease-in-out 1s;
+          } 
+}
+}
+
+@media only screen and (max-width:990px){
+    .number__list{
+        right: 10px;
+    }
+    .number img{
+        padding-left: 5%;
+    }
+
+}
+@media only screen and (max-width:880px){
+    .number__list{
+        right: -10%;
+    }
+    .number img{
+        padding-left: 0;
+    }
+
+}
+@media only screen and (max-width:810px){
+    .number__list{
+        right: 5%;
+        width: 345px;
+        height: 266px;
+        
+    }
+    .number img{
+        width: 442px;
+        height: 326px;
+        padding-left: 2%;
+    }
+
+}
+@media only screen and (max-width:650px){
+    .number{
+        background-size: 250px 146px;
+    }
+    .number__box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .number__list{
+        // width: 100px;
+        // height: 152px;     
+        position: static;
+        margin-right: 20%;
+    }
+    .number__item{
+        width: 480px;
+        height: 300px;
+    }
+    .number img{
+        width: 482px;
+        height: 366px;
+    }
+
+}
