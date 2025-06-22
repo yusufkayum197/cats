@@ -706,9 +706,9 @@ ul, ol {
   }
 }
 .otziv {
-  padding: 143px 0;
+  padding: 43px 0;
 }
-.otziv__container {
+.otziv__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -732,4 +732,30 @@ ul, ol {
   letter-spacing: 0%;
   vertical-align: middle;
   color: #1A212F;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.otziv__text {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #1A212F;
+  width: 362px;
+  height: 101px;
+}
+.otziv__author {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #848484;
+  padding-top: 45px;
 }/*# sourceMappingURL=main.min.css.map */
